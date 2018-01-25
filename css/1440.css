@@ -1,0 +1,70 @@
+@media screen and (min-width:1025px) {
+    body {
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    header {
+        background-color: #082841;
+        position: relative;
+        height: 672px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: left;
+    }
+    
+    footer {
+        height: 795px;
+        background: linear-gradient(#e6f0f0, #e9f0e6);
+    }
+
+    .photo {
+        order: -1;
+        width: 552px;
+        display: block;
+    }
+
+    .photo img {           
+        max-height: 672px;
+    }
+    
+    .fullName, .person {
+        position: relative;
+        display: block;
+        margin-left: -8%;
+    }
+
+    .fullName {
+        margin-top: 65px;
+    }
+    
+    .person {
+        max-width: 544px;
+        width: 100%;
+        margin-top: 234px;
+    }
+
+    .career, .name {
+        color: #ffffff;
+        display: block;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+    
+    .career {
+        font-size: 24px;
+    }
+    
+    .name {
+        font-size: 40px;
+        margin-top: 11px;
+    }
+
+    .headText {
+        font-family: Georgia;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 28px; 
+    }   
+}

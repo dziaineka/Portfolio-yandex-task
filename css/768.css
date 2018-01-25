@@ -1,0 +1,78 @@
+@media screen and (min-width:337px) and (max-width:768px) {
+    header {
+        background-color: #082841;
+        position: relative;
+        height: 1024px;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        max-width: 768px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    footer {
+        height: 795px;
+        background: linear-gradient(#e6f0f0, #e9f0e6);
+    }
+
+    .photo img {
+        width: 384px;
+        display: none;
+    }
+    
+    .photo {
+        display: block;
+        position: relative;
+        max-width: 384px;
+        max-height: 384px;
+        width: 100%;
+        height: 100%;
+        margin-top: 39px;
+        border-radius: 100%;
+        background: url(../img/andrei.jpg) no-repeat -200px 0;
+        background-size: auto 1000px;
+    }
+
+    .fullName {
+        margin-top: 97px;
+        position: relative;
+        display: block;
+        font-family: Helvetica;
+        font-weight: bold;  
+        min-width: 337px;     
+    }
+
+    .career, .name {
+        text-align: center;
+        color: #ffffff;
+        display: block;
+    }
+    
+    .career {
+        font-size: 24px;
+    }
+    
+    .name {
+        font-size: 40px;
+        margin-top: 11px;
+    }
+    
+    .person {
+        margin-top: 75px;
+        max-width: 544px;
+        width: 95%;
+    }
+    
+    .headText {
+        font-family: Georgia;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 28px; 
+        text-align: center;
+    }  
+}
