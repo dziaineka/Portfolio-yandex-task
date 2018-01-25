@@ -4,7 +4,7 @@
         width: 100%;
         margin: auto;
     }
-    
+    /*---------------------------------------*/
     header {
         background-color: #082841;
         position: relative;
@@ -14,13 +14,7 @@
         flex-flow: column wrap;
         align-items: left;
     }
-    
-    footer {
-        height: 795px;
-        background: linear-gradient(#e6f0f0, #e9f0e6);
-    }
-
-    .photo { 
+    .photo {
         order: -1;
         width: 424px;
         height: 768px;
@@ -28,47 +22,124 @@
         background: url(../img/andrei.jpg) no-repeat -80px 0;
         background-size: auto 768px;
     }
-
-    .photo img {  
+    .photo img {
         display: none;
     }
-    
-    .fullName, .person {
+    .fullName,
+    .person {
         position: relative;
         display: block;
         margin-left: 7%;
     }
-
     .fullName {
         margin-top: 65px;
     }
-    
     .person {
         max-width: 464px;
         width: 100%;
         margin-top: 266px;
     }
-
-    .career, .name {
+    .career,
+    .name {
         color: #ffffff;
         display: block;
         font-family: Helvetica;
         font-weight: bold;
     }
-    
     .career {
         font-size: 24px;
     }
-    
     .name {
         font-size: 40px;
         margin-top: 11px;
     }
-
     .headText {
         font-family: Georgia;
         color: #ffffff;
         font-size: 20px;
-        line-height: 28px; 
-    }  
+        line-height: 28px;
+    }
+    /*---------------------------------------*/    
+    main {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .expectations,
+    .myWork {
+        max-width: 944px;
+        width: 95%;
+        position: relative;
+    }
+    .expectations {
+        margin-top: 106px;
+    }
+    .myWork {
+        margin-top: 129px;
+    }
+    .expectationsTitle,
+    .myWorkTitle {
+        font-family: Helvetica;
+        font-weight: bold;
+        color: #000000;
+        font-size: 40px;
+    }
+    .blocksContainer {
+        margin-top: 38px;
+        position: relative;
+        display: inline-flex;
+        flex-flow: row wrap;
+        height: 448px;
+    }
+    .block {
+        background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+        border-radius: 4px;
+        height: 47%;
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: left;
+        justify-content: space-between;
+    }
+    .blockName {
+        font-family: Helvetica;
+        font-weight: bold;
+        color: #000000;
+        font-size: 24px;
+        margin-top: 25px;
+        margin-left: 32px;
+    }
+    .blockText {
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        padding-right: 75px;
+        margin-bottom: 25px;
+        margin-left: 32px;
+    }
+    #b1 {
+        width: 54%;
+        margin-right: 2%;
+        margin-bottom: 4.6%;
+    }
+    #b2 {
+        width: 37%;
+    }
+    #b3 {
+        width: 32%;
+        margin-right: 2%;
+    }
+    #b4 {
+        width: 59%;
+    }
+    .worksContainer {
+        margin-top: 63px;
+    }
+    /*---------------------------------------*/
+    footer {
+        height: 795px;
+        background: linear-gradient(#e6f0f0, #e9f0e6);
+    }
 }
