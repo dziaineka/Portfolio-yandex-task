@@ -116,16 +116,15 @@
         margin-left: 32px;
     }
     #b1 {
-        width: 54%;
-        margin-right: 2%;
-        margin-bottom: 4.6%;
+        width: 58.5%;
+        margin-right: 1.5%;
     }
     #b2 {
-        width: 37%;
+        width: 40%;
     }
     #b3 {
-        width: 32%;
-        margin-right: 2%;
+        width: 39.5%;
+        margin-right: 1.5%;
     }
     #b4 {
         width: 59%;
@@ -137,5 +136,133 @@
     footer {
         height: 795px;
         background: linear-gradient(#e6f0f0, #e9f0e6);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .contacts {
+        margin-top: 81px;
+        position: relative;
+        display: inline-flex;
+        flex-flow: column;
+        max-width: 944px;
+        width: 95%;
+    }
+    .contactTitle {
+        font-family: Helvetica;
+        font-weight: bold;
+        color: #000000;
+        font-size: 40px;
+    }
+    .infoContainer {
+        margin-top: 61px;
+        display: inline-flex;
+        flex-flow: row;
+    }
+    .contactInfo {
+        margin-right: 96px;
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+    }
+    .contactText,
+    .linkTitle {
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+    }
+    .contactFields {
+        display: inline-flex;
+        flex-flow: column;
+        justify-content: space-around;
+        min-width: 544px;
+        width: 100%;
+        margin-top: -24px;
+    }
+    .contactFields input,
+    textarea {
+        margin-top: 24px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        border-style: hidden;
+    }
+    .contactFields textarea {
+        resize: none;
+    }
+    #writerName,
+    #writerEmail,
+    #file,
+    #writerMessage {
+        min-height: 48px;
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        padding-left: 16px;
+    }
+    .linksTitle {
+        margin-top: 30px;
+    }
+    #writerMessage {
+        padding-top: 11px;
+    }
+    #writerButton {
+        background: #DD3E18;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 24px;
+        height: 48px;
+    }
+    .contactFields label {
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 16px;
+        color: #DD3E18;
+        line-height: 24px;
+    }
+    .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    .inputfile+label {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .chooseFile {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+    .chooseFile label img {
+        max-height: 20px;
+        height: 100%;
+    }
+    .socialLinks {
+        margin-top: 10px;
+    }
+    .square {
+        height: 20px;
+        width: 20px;
+        opacity: 0.1;
+        background: #000000;
+        border-radius: 2px;
+        margin-top: 2px;
+    }
+    .link {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .link a {
+        margin-left: 12px;
+        color: #DD3E18;
+        text-decoration: none;
     }
 }
