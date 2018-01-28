@@ -2,14 +2,15 @@
     body {
         max-width: 768px;
         width: 100%;
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
     /*---------------------------------------*/
     header {
         background-color: #082841;
-        position: relative;
+        position: inherit;
         height: 1024px;
         width: 100%;
         display: inline-flex;
@@ -22,7 +23,7 @@
     }
     .photo {
         display: block;
-        position: relative;
+        position: inherit;
         max-width: 384px;
         max-height: 384px;
         width: 100%;
@@ -34,7 +35,7 @@
     }
     .fullName {
         margin-top: 97px;
-        position: relative;
+        position: inherit;
         display: block;
         font-family: Helvetica;
         font-weight: bold;
@@ -67,16 +68,17 @@
     }
     /*---------------------------------------*/
     main {
-        position: relative;
+        position: inherit;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        width: 100%;
     }
+    /*------------------*/
     .expectations,
     .myWork {
-        max-width: 704px;
-        width: 95%;
-        position: relative;
+        width: 92.2%;
+        position: inherit;
     }
     .expectations {
         margin-top: 82px;
@@ -144,7 +146,156 @@
     }
     /*---------------------------------------*/
     footer {
-        height: 795px;
+        height: 819px;
+        width: 100%;
         background: linear-gradient(#e6f0f0, #e9f0e6);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        position: inherit;
+    }
+    .contacts {
+        margin-top: 33px;
+        position: inherit;
+        display: inline-flex;
+        flex-flow: column;
+        align-items: left;
+        max-width: 704px;
+        width: 92.2%;
+    }
+    .contactTitle {
+        font-family: Helvetica;
+        font-weight: bold;
+        color: #000000;
+        font-size: 40px;
+        width: 100%;
+    }
+    .infoContainer {
+        margin-top: 21px;
+        display: inline-flex;
+        flex-flow: column;
+        position: inherit;
+        width: 100%;
+    }
+    .contactInfo {
+        margin-right: 96px;
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .contactText,
+    .linksTitle {
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+    }
+    .contactText {
+        width: 55%;
+    }
+    .linksTitle {
+        display: none;
+    }
+    .contactFields {
+        display: inline-flex;
+        flex-flow: column;
+        justify-content: space-around;
+        max-width: 704px;
+        width: 100%;
+        margin-top: 24px;
+    }
+    .contactFields input,
+    textarea {
+        margin-top: 24px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        border-style: hidden;
+    }
+    .contactFields textarea {
+        resize: none;
+    }
+    #writerName,
+    #writerEmail,
+    #file,
+    #writerMessage {
+        min-height: 48px;
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .linksTitle {
+        margin-top: 30px;
+    }
+    #writerMessage {
+        padding-top: 11px;
+    }
+    #writerButton {
+        background: #DD3E18;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 24px;
+        height: 48px;
+    }
+    .contactFields label {
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 16px;
+        color: #DD3E18;
+        line-height: 24px;
+    }
+    .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    .inputfile+label {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .chooseFile {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+    .chooseFile label img {
+        max-height: 20px;
+        height: 100%;
+    }
+    .socialLinks {
+        display: flex;
+        flex-flow: column;
+        align-items: left;
+        position: relative;
+        right: 100%;
+    }
+    .square {
+        height: 20px;
+        width: 20px;
+        opacity: 0.1;
+        background: #000000;
+        border-radius: 2px;
+        margin-top: 2px;
+    }
+    .link {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .link a {
+        margin-left: 12px;
+        color: #DD3E18;
+        text-decoration: none;
     }
 }

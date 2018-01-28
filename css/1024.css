@@ -7,7 +7,7 @@
     /*---------------------------------------*/
     header {
         background-color: #082841;
-        position: relative;
+        position: inherit;
         height: 768px;
         width: 100%;
         display: inline-flex;
@@ -27,7 +27,7 @@
     }
     .fullName,
     .person {
-        position: relative;
+        position: inherit;
         display: block;
         margin-left: 7%;
     }
@@ -35,7 +35,7 @@
         margin-top: 65px;
     }
     .person {
-        max-width: 464px;
+        max-width: 40%;
         width: 100%;
         margin-top: 266px;
     }
@@ -61,7 +61,7 @@
     }
     /*---------------------------------------*/
     main {
-        position: relative;
+        position: inherit;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -143,14 +143,15 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+        position: inherit;
+        width: 100%;
     }
     .contacts {
         margin-top: 81px;
-        position: relative;
         display: inline-flex;
         flex-flow: column;
-        max-width: 944px;
-        width: 95%;
+        position: inherit;
+        width: 92.2%;
     }
     .contactTitle {
         font-family: Helvetica;
@@ -169,6 +170,7 @@
         font-size: 16px;
         color: #000000;
         line-height: 24px;
+        width: 50%;
     }
     .contactText,
     .linkTitle {
@@ -181,7 +183,6 @@
         display: inline-flex;
         flex-flow: column;
         justify-content: space-around;
-        min-width: 544px;
         width: 100%;
         margin-top: -24px;
     }
