@@ -62,20 +62,24 @@
         line-height: 24px;
         text-align: center;
     }
-    .worksContainer {
-        display: none;
-    }
     /*---------------------------------------*/
+    main {
+        position: inherit;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+    }
     .expectations,
     .myWork {
-        width: 92.2%;
+        width: 91.6%;
         position: inherit;
     }
     .expectations {
         margin-top: 91px;
     }
     .myWork {
-        margin-top: 90px;
+        margin-top: 83px;
     }
     .expectationsTitle,
     .myWorkTitle {
@@ -85,22 +89,54 @@
         font-size: 32px;
         line-height: 40px;
     }
+    /*--------EXPECTATIONS-SLIDER----------*/
     .blocksContainer {
-        margin-top: 38px;
+        margin-top: 13px;
         position: relative;
-        display: inline-flex;
-        flex-flow: row wrap;
-        height: 448px;
+        width: 100%;
+        text-align: center;
+    }
+    .sliderCheckExp {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
     }
     .block {
         background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
         border-radius: 4px;
-        height: 47%;
-        position: relative;
         display: flex;
         flex-flow: column wrap;
         align-items: left;
         justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 304px;
+    }
+    .sliderLabelExp {
+        position: inherit;
+        margin-top: 107%;
+        overflow: hidden;
+        display: inline-block;
+        margin-left: 24px;
+        right: 10px;
+        width: 8px;
+        height: 8px;
+        background: #DD3E18;
+        border-radius: 50%;
+        text-indent: -9999px;
+    }
+    /* Display */
+    .block {
+        display: none;
+    }
+    .sliderCheckExp:checked+.sliderLabelExp+.block {
+        display: block;
+    }
+    /* Current */
+    .sliderCheckExp:checked+.sliderLabelExp {
+        background: #000000;
     }
     .blockName {
         font-family: Helvetica;
@@ -109,6 +145,7 @@
         font-size: 24px;
         margin-top: 25px;
         margin-left: 32px;
+        text-align: left;
     }
     .blockText {
         font-family: Georgia;
@@ -116,25 +153,97 @@
         color: #000000;
         line-height: 24px;
         padding-right: 75px;
+        margin-top: 60px;
         margin-bottom: 25px;
         margin-left: 32px;
+        text-align: left;
     }
-    #b1 {
-        width: 58.5%;
-        margin-right: 1.5%;
-    }
-    #b2 {
-        width: 40%;
-    }
-    #b3 {
-        width: 39.5%;
-        margin-right: 1.5%;
-    }
-    #b4 {
-        width: 59%;
-    }
+    /*------------------*/
     .worksContainer {
-        margin-top: 63px;
+        margin-top: 38px;
+        position: inherit;
+    }
+    .work {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 64px;
+    }
+    /*------------------*/
+    .slider {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .sliderCheck {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    .sliderImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .sliderLabel {
+        position: inherit;
+        margin-top: 80%;
+        overflow: hidden;
+        display: inline-block;
+        margin-left: 24px;
+        width: 8px;
+        height: 8px;
+        background: #DD3E18;
+        border-radius: 50%;
+        text-indent: -9999px;
+    }
+    /* Display */
+    .sliderImage {
+        display: none;
+    }
+    .sliderCheck:checked+.sliderLabel+.sliderImage {
+        display: block;
+    }
+    /* Current */
+    .sliderCheck:checked+.sliderLabel {
+        background: #000000;
+    }
+    /*------------------*/
+    .workDescription {
+        width: 100%;
+        position: inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        order: -1;
+    }
+    .workName {
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 24px;
+        color: #000000;
+    }
+    .workURL {
+        margin-top: 8px;
+    }
+    .workURL a {
+        font-family: Georgia;
+        font-size: 16px;
+        color: #DD3E18;
+        line-height: 24px;
+        text-decoration: none;
+    }
+    .workText {
+        opacity: 0.8;
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        width: 100%;
+        margin-top: 16px;
     }
     /*---------------------------------------*/
     footer {

@@ -92,6 +92,10 @@
         flex-flow: row wrap;
         height: 448px;
     }
+    .sliderCheckExp,
+    .sliderLabelExp {
+        display: none;
+    }
     .block {
         background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
         border-radius: 4px;
@@ -135,6 +139,90 @@
     }
     .worksContainer {
         margin-top: 63px;
+    }
+    .work {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        height: 408px;
+        margin-bottom: 144px;
+    }
+    /*------------------*/
+    .slider {
+        position: relative;
+        width: 544px;
+        padding-top: 192px;
+        text-align: center;
+    }
+    .sliderCheck {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    #work2 .workDescription {
+        order: -1;
+    }
+    #work2 .sliderLabel {
+        margin-left: -5%;
+    }
+    .sliderImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .sliderLabel {
+        overflow: hidden;
+        display: block;
+        margin-left: 103%;
+        margin-bottom: 16px;
+        width: 8px;
+        height: 8px;
+        background: #DD3E18;
+        border-radius: 50%;
+        text-indent: -9999px;
+    }
+    /* Display */
+    .sliderImage {
+        display: none;
+    }
+    .sliderCheck:checked+.sliderLabel+.sliderImage {
+        display: block;
+    }
+    /* Current */
+    .sliderCheck:checked+.sliderLabel {
+        background: #000000;
+    }
+    /*------------------*/
+    .workDescription {
+        width: 30%;
+        position: inherit;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .workName {
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 24px;
+        color: #000000;
+    }
+    .workURL {
+        margin-top: 8px;
+    }
+    .workURL a {
+        font-family: Georgia;
+        font-size: 16px;
+        color: #DD3E18;
+        line-height: 24px;
+        text-decoration: none;
+    }
+    .workText {
+        opacity: 0.8;
+        font-family: Georgia;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
     }
     /*---------------------------------------*/
     footer {
