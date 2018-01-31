@@ -166,6 +166,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        display: block;
     }
     .sliderLabel {
         overflow: hidden;
@@ -177,13 +178,14 @@
         background: #DD3E18;
         border-radius: 50%;
         text-indent: -9999px;
+        cursor: pointer;
     }
     /* Display */
     .sliderImage {
-        display: none;
+        visibility: hidden;
     }
     .sliderCheck:checked+.sliderLabel+.sliderImage {
-        display: block;
+        visibility: visible;
     }
     /* Current */
     .sliderCheck:checked+.sliderLabel {
@@ -304,6 +306,7 @@
         color: #FFFFFF;
         line-height: 24px;
         height: 48px;
+        cursor: pointer;
     }
     .contactFields label {
         font-family: Helvetica;
