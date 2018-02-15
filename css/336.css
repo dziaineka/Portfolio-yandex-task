@@ -131,10 +131,14 @@
     }
     /* Display */
     .block {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 1000ms ease-in-out;
     }
     .sliderCheckExp:checked+.sliderLabelExp+.block {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 1000ms ease-in-out;
     }
     /* Current */
     .sliderCheckExp:checked+.sliderLabelExp {
@@ -206,10 +210,14 @@
     }
     /* Display */
     .sliderImage {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 1000ms ease-in-out;
     }
     .sliderCheck:checked+.sliderLabel+.sliderImage {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 1000ms ease-in-out;
     }
     /* Current */
     .sliderCheck:checked+.sliderLabel {

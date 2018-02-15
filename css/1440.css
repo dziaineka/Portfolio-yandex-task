@@ -183,9 +183,13 @@
     /* Display */
     .sliderImage {
         visibility: hidden;
+        opacity: 0;
+        transition: all 1000ms ease-in-out;
     }
     .sliderCheck:checked+.sliderLabel+.sliderImage {
         visibility: visible;
+        opacity: 1;
+        transition: all 1000ms ease-in-out;
     }
     /* Current */
     .sliderCheck:checked+.sliderLabel {
